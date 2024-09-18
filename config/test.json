@@ -1,0 +1,24 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "ttl": 60
+  },
+  "rateLimiter": {
+    "windowMs": 60000,
+    "maxRequests": 10
+  },
+  "jwt": {
+    "secretKey": "your_secret_key",
+    "expiresIn": "1h"
+  },
+  "bullQueue": {
+    "redis": {
+      "host": "localhost",
+      "port": 6379
+    }
+  }
+}

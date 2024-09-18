@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Node.js microservice with rate limiting, caching, and monitoring",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --runInBand authorize.test.js && jest --runInBand cache.test.js && jest --runInBand errorhandler.test.js && jest --runInBand rateLimiter.test.js"
+  },
+  "dependencies": {
+    "bull": "^3.20.1",
+    "config": "^3.3.12",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3",
+    "jsonwebtoken": "^8.5.1",
+    "prom-client": "^12.0.0",
+    "rate-limit-redis": "^2.0.0",
+    "redis": "^4.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "supertest": "^6.0.1"
+  },
+  "author": "MOSTAFA",
+  "license": "MIT"
+}
